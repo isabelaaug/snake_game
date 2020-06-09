@@ -2,6 +2,8 @@ let canvas = document.getElementById("snake");
 let context = canvas.getContext("2d");
 let box = 32;
 let snake = [];
+let pontos = 0;
+
 snake[0] = {
     x: 8 * box,
     y: 8 * box
@@ -13,19 +15,19 @@ let food = {
 }
 
 function criarBG(){
-    context.fillStyle = "lightgreen";
+    context.fillStyle = "#1B7200";
     context.fillRect(0, 0, 16 * box, 16 * box);
 }
 
 function criarSnake(){
     for(i=0; i < snake.length; i++){
-        context.fillStyle = "green";
+        context.fillStyle = "#36E200";
         context.fillRect(snake[i].x, snake[i].y, box, box);
     }
 }
 
 function drawFood(){
-    context.fillStyle = "red";
+    context.fillStyle = "#E5070D";
     context.fillRect(food.x, food.y, box, box);
 }
 
@@ -49,6 +51,7 @@ function iniciarJogo(){
         if(snake[0].x == snake[i].x && snake[0].y == snake[i].y){
             clearInterval(jogo);
             alert("Game Over! :(")
+            location.reload();
         }
     }
 
@@ -67,11 +70,17 @@ function iniciarJogo(){
     if(snakeX != food.x || snakeY != food.y){
         snake.pop();
     } else{
+        pontos = pontos + 1;
+        console.log(pontos);
+        placar(pontos)
         food.x = Math.floor(Math.random() * 15 + 1) * box;
         food.y = Math.floor(Math.random() * 15 + 1) * box;
     } 
-
-
+    
+    function placar(pontos) {
+        var pontuacao = document.getElementById('pontuacao');
+        pontuacao.innerHTML = pontos;
+    }
 
     let newHead = {
         x: snakeX,

@@ -1,6 +1,6 @@
 body {
-    font-family: Helvetica, Arial, sans-serif;
-    color: green;
+    font-family: Ubuntu, Arial, sans-serif;
+    color: #36E200;
     height: 95vh;
     width: 95;
     display: flex;
@@ -8,3 +8,48 @@ body {
     align-items: center;
     flex-direction: column;
 }
+
+#div_principal {
+    display: flex;
+    background-color: #0D1311;
+	height: 650px; 
+    width: 767px;
+    padding: 10px;
+    flex-direction: row;  
+}
+
+#div_secundaria{
+    display: flex;
+    flex-direction: column; 
+}
+
+#div_titulo {
+    text-align: center;
+    padding: 5px;
+}
+
+#div_score {
+    padding-left: 5px;   
+}
+
+#div_placar {
+    display: flex;
+    flex-direction: column;
+    background-color: #1B7200;
+    height: 60;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    font-size: 36px;
+    align-items: center;
+    text-align: center;
+    margin-left: 5px;
+}
+
+#div_canvas {
+    background-color: #36E200;
+    height: 512px;
+    width: 512px;
+    padding: 10px;
+    margin: 15px;
+}
+

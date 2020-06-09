@@ -1,15 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
-    <title>Snake Game</title>
-</head>
-<body>
-    <h1>Snake Game!</h1>
-    <canvas id="snake" width="512" height="512"></canvas>
-</body>
+<link
+    href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@700&display=swap" 
+    rel="stylesheet"
+>
+<div id="div_principal">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css">
+        <script defer src="script.js"></script>
+        <title>Snake Game</title>
+        <div id="div_secundaria">
+            <div id="div_titulo">
+                <h1>Snake Game!</h1>
+            </div>
+            <div id="div_score">
+                <p>Score:</p>
+            </div>
+            <div id="div_placar">
+                <span id="pontuacao">0</span>
+            </div> 
+        </div>              
+    </head>
+    <body>
+        <div id="div_canvas">
+            <canvas id="snake" width="512" height="512"></canvas>
+        </div> 
+        
+    </body>
+</div>
 </html>
