@@ -1,8 +1,6 @@
 # snake_game
 Recriando o jogo da cobrinha com JavaScript :snake:
 
-https://github.com/isabelaaug/snake_game/blob/master/assets/game.png
-
 <h1 align="center">
 <br>
   <img src="https://github.com/isabelaaug/snake_game/blob/master/assets/game.png" alt="snake">
